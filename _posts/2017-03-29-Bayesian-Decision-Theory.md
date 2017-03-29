@@ -4,5 +4,4 @@ title: Bayesian Decision Theory
 category: Pattern Classification
 ---
 
-### Introduction
-Bayesian decision theory는
+Bayesian decision theory는 
