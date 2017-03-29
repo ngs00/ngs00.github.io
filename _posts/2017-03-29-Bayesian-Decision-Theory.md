@@ -46,6 +46,7 @@ P(w_2|x),  & \text{if $p(x|w_1)P(w_1)$ > $p(x|w_2)P(w_2)$} \\
 P(w_1|x), & \text{otherwise}
 \end{cases}
 $$
+
 <br />
 ### Generalization of Bayesian decision theory
 지금까지는 두 개의 class (state of nature)만 있는 경우에 대해서 probability error를 설명하였다. 지금부터는 $$C$$개의 class와 $$K$$개의 action이 존재하는 패턴인식 문제를 예로 들어 앞에서 설명한 방법론을 일반화할 것이다. 여기에서 action은 "$$w_1$$을 선택한다", "밥을 먹는다", "1을 더한다" 등과 같은 행동들을 의미한다. 또한, 입력 $$x$$를 bold text로 표기할 것인데, 이는 데이터의 feature가 여러개라는 것을 의미한다. 따라서, 데이터 $$\boldsymbol{x}$$는 벡터로 나타내어진다. 직관적인 이해를 위해 부분에서는 class와 state를 혼용하여 사용할 것이다.
