@@ -46,7 +46,7 @@ P(w_2|x),  & \text{if $p(x|w_1)P(w_1)$ > $p(x|w_2)P(w_2)$} \\
 P(w_1|x), & \text{otherwise}
 \end{cases}
 $$
-
+많은 경우에 Bayes' theorem을 이용하여 식 (1)을 식 (3)과 같은 형태로 변형하면, 계산이 불가능했던 식이 계산 가능한 형태로 변형된다.
 <br />
 ### Generalization of Bayesian decision theory
 지금까지는 두 개의 class (state of nature)만 있는 경우에 대해서 probability error를 설명하였다. 지금부터는 $$C$$개의 class와 $$K$$개의 action이 존재하는 패턴인식 문제를 예로 들어 앞에서 설명한 방법론을 일반화할 것이다. 여기에서 action은 "$$w_1$$을 선택한다", "밥을 먹는다", "1을 더한다" 등과 같은 행동들을 의미한다. 또한, 입력 $$x$$를 bold text로 표기할 것인데, 이는 데이터의 feature가 여러개라는 것을 의미한다. 따라서, 데이터 $$\boldsymbol{x}$$는 벡터로 나타내어진다. 직관적인 이해를 위해 부분에서는 class와 state를 혼용하여 사용할 것이다.
@@ -57,4 +57,12 @@ $$
 R(\alpha_i|\boldsymbol{x}) = \sum_{j=1}^{C} \lambda(\alpha_i|w_j)P(w_j|x)
 $$
 
-우리의 목적은 식 (6)으로 나타내어지는 *overall risk*를 최소화하는 *decision rule* $$\alpha(\boldsymbol{x})$$를 찾는 것이다.
+우리의 목적은 식 (6)으로 나타내어지는 *overall risk*를 최소화하는 *decision rule* $$\alpha(\boldsymbol{x})$$를 찾는 것이다. 여기에서 $$\alpha(\boldsymbol{x})$$는 주어진 데이터 $$\boldsymbol{x}$$에 대해 하나의 action $$\alpha_i$$를 결정하는 함수이다.
+
+$$
+R = \int R(\alpha(\boldsymbol{x})|\boldsymbol{x})p(\boldsymbol{x}) d\boldsymbol{x}
+$$
+
+어떠한 행동을 나타내는 $$\alpha_i$$를 추가함으로써, 우리가 풀고자 하는 문제는 probability error를 최소화하는 것에서 확률과 loss를 동시에 고려하는 overall risk 최소화 문제로 변형되었다.
+
+
