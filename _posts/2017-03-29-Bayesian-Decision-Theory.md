@@ -26,7 +26,23 @@ $$
 한 가지 생각해볼 점은 이러한 결정 방법이 "probability error의 평균을 최소화하는 것인가?"이다. 모든 probability error를 수학적으로 표현하면 아래의 식 (2)와 같다.
 
 $$
-P(error|x) = \int_{-\infty}^\infty P(error, x) dx = \int_{-\infty}^\infty P(error|x)p(x) dx
+P(error) = \int_{-\infty}^\infty P(error, x) dx = \int_{-\infty}^\infty P(error|x)p(x) dx
 $$
 
 Probability error는 항상 0보다 크거나 같은 값을 갖기 때문에 $P(error|x)$를 최소화하는 것은 식 (2)를 최소화 하는 것과 같다. 따라서, 식 (1)과 같이 결정하는 것은 전체적인 probability error를 최소화한다.
+<br />
+위에서 설명한 바와 같이 $P(w|x)$를 이용하여 결정을 내리면, 우리는 probability error를 최소화 할 수 있다. 따라서, 이러한 최적의 결정을 내리기 위해서는 입력이 주어질 때마다 정확한 $P(w|x)$를 계산할 수 있어야 한다. 현실적으로 $P(w|x)$를 직접 계산하는 것은 매우 어렵거나 불가능하기 때문에 우리는 식 (3)과 같이 정의되는 Bayes' theorem을 이용하여 간접적으로 $P(w|x)$를 계산한다.
+
+$$
+P(w|x) = \frac{p(x|w)P(w)}{p(x)}
+$$
+
+Bayes' theorem을 이용하면, 식 (1)을 다음과 같이 변경할 수 있다.
+
+$$
+P(error|x) =
+\begin{cases}
+P(w_2|x),  & \text{if $p(x|w_1)P(w_1)$ > $p(x|w_2)P(w_2)$} \\
+P(w_1|x), & \text{otherwise}
+\end{cases}
+$$
