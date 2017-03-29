@@ -46,6 +46,7 @@ P(w_2|x),  & \text{if $p(x|w_1)P(w_1)$ > $p(x|w_2)P(w_2)$} \\
 P(w_1|x), & \text{otherwise}
 \end{cases}
 $$
+
 많은 경우에 Bayes' theorem을 이용하여 식 (1)을 식 (3)과 같은 형태로 변형하면, 계산이 불가능했던 식이 계산 가능한 형태로 변형된다.
 <br />
 ### Generalization of Bayesian decision theory
