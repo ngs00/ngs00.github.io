@@ -15,12 +15,10 @@ Bayesian decision theory는 패턴 인식 문제를 풀기 위한 통계적 방�
 ### Probability error and decision
 두 개의 클래스만 존재하는 패턴인식 문제에서 Bayesian decision theory의 기본 개념은 $$P(w_1|x)$$가 $$P(w_2|x)$$보다 크다면 $$w_1$$을 선택하고, 그렇지 않으면 $$w_2$$를 선택하는 것이다.
 
-\begin{equation}
-\begin{aligned}
-{z}_{ik} =
+$$
+f(n) =
 \begin{cases}
- & 1, \qquad \text{ if } {x}_{i} \in {c}_{k}  \\ 
- & 0, \qquad \text{ otherwise. }
+n/2,  & \text{if $n$ is even} \\
+3n+1, & \text{if $n$ is odd}
 \end{cases}
-\end{aligned}
-\end{equation}
+$$
