@@ -1,4 +1,4 @@
  ---
   layout: post
-  title: Artificial Neuron
+  title: "Artificial Neuron"
   ---
