@@ -13,17 +13,20 @@ Bayesian decision theory는 패턴 인식 문제를 풀기 위한 통계적 방�
 우리의 목적은 어떠한 입력 $$x$$가 주어졌을 때 state of nature $$w$$의 값을 결정하는 것으로, 이를 확률적으로 나타내면 $$P(w|x)$$라는 조건부확률로 나타낼 수 있다. Bayesian decision theory에서는 이 조건부확률을 class-conditional probability라고 하며, 우리의 목적은 $$P(w|x)$$를 잘 계산하는 classifier를 설계하는 것이다.
 <br />
 ### Probability error and decision
-두 개의 클래스만 존재하는 패턴인식 문제에서 Bayesian decision theory의 기본 개념은 $$P(w_1|x)$$가 $$P(w_2|x)$$보다 크다면 $$w_1$$을 선택하고, 그렇지 않으면 $$w_2$$를 선택하는 것이다.
+두 개의 클래스만 존재하는 패턴인식 문제에서 Bayesian decision theory의 기본 개념은 $$P(w_1|x)$$가 $$P(w_2|x)$$보다 크다면 $$w_1$$을 선택하고, 그렇지 않으면 $$w_2$$를 선택하는 것이다. 이러한 방법을 따를 경우, 우리가 결정을 내릴 때마다 발생하는 probability error $P(error|x)$는 다음과 같이 정의된다.
 
 $$
-\begin{equation}
-\begin{aligned}
 P(error|x) =
 \begin{cases}
-P(w_1|x),  & \text{if we decide $w_2$} \\
-P(w_2|x), & \text{if we decide $w_1$}
+P(w_2|x), & \text{if $P(w_1|x)$ > $P(w_2|x)$} \\
+P(w_1|x), & \text{otherwise}
 \end{cases}
-\end{aligned}
-\end{equation}
 $$
 
+한 가지 생각해볼 점은 이러한 결정 방법이 "probability error의 평균을 최소화하는 것인가?"이다. 모든 probability error를 수학적으로 표현하면 아래의 식 (2)와 같다.
+
+$$
+P(error|x) = \int_{-\infty}^\infty P(error, x) dx = \int_{-\infty}^\infty P(error|x)p(x) dx
+$$
+
+Probability error는 항상 0보다 크거나 같은 값을 갖기 때문에 $P(error|x)$를 최소화하는 것은 식 (2)를 최소화 하는 것과 같다. 따라서, 식 (1)과 같이 결정하는 것은 전체적인 probability error를 최소화한다.
