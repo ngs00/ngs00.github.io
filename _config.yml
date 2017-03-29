@@ -18,7 +18,7 @@ avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/je
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  email: ngs0726@gmail.com
+  email:
   facebook:
   flickr:
   github: barryclark/jekyll-now
@@ -40,7 +40,7 @@ disqus:
 google_analytics:
 
 # Your website
-url: https://ngs00.github.io
+http://ngs00.github.io
 # Used for Sitemap.xml and your RSS feed
 url:
 
