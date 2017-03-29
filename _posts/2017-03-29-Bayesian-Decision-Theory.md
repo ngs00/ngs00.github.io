@@ -46,3 +46,12 @@ P(w_2|x),  & \text{if $p(x|w_1)P(w_1)$ > $p(x|w_2)P(w_2)$} \\
 P(w_1|x), & \text{otherwise}
 \end{cases}
 $$
+<br />
+### Generalization of Bayesian decision theory
+지금까지는 두 개의 class (state of nature)만 있는 경우에 대해서 probability error를 설명하였다. 지금부터는 $$C$$개의 class와 $$K$$개의 action이 존재하는 패턴인식 문제를 예로 들어 앞에서 설명한 방법론을 일반화할 것이다. 여기에서 action은 "$$w_1$$을 선택한다", "오른쪽으로 꺾는다" 등과 같은 행동들을 의미한다. 직관적인 이해를 위해 부분에서는 class와 state를 혼용하여 사용할 것이다.
+<br />
+어떠한 state $$w_j$$에서 특정한 action $$\alpha_i$$를 할 때의 loss는 $$\lambda(\alpha_i|w_j)$$로 정의되며, loss의 expected value를 risk라고 한다. 주어진 입력 $$x$$에 대한 risk를 의미하는 conditional risk는 아래의 식 (5)와 같이 정의된다.
+
+$$
+R(\alpha_i|\boldsymbol{x}) = \sum_{j=1}^{C} \lambda(\alpha_i|w_j)P(w_j|x)
+$$
