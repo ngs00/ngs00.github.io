@@ -55,3 +55,5 @@ $$
 $$
 R(\alpha_i|\boldsymbol{x}) = \sum_{j=1}^{C} \lambda(\alpha_i|w_j)P(w_j|x)
 $$
+
+우리의 목적은 식 (6)으로 나타내어지는 *overall risk*를 최소화하는 *decision rule* $$\alpha(\boldsymbol{x})$$를 찾는 것이다.
