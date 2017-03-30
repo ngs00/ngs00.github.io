@@ -24,7 +24,7 @@ $$
 NBC는 입력 데이터에 포함된 어떤 요소가 나타날 때, 주어진 입력이 어떠한 class에 속할 확률을 비교하여 가장 높은 확률을 갖는 class로 데이터를 할당하도록 동작한다. 이러한 동작은 <a href="https://ngs00.github.io/Bayesian-Decision-Theory/">앞의 글</a>에서 설명한 *discriminant function*기반의 network와 매우 유사하다. NBC는 주어진 입력을 분류하기 위해 Bayes' theorem을 이용하기 때문에 Naive "Bayes" Classifier라는 명칭이 붙었다.
 <br />
 ### Naive assumption
-주어진 데이터 $$\mathcal{D}$$에 대하여 해당 데이터를 어떠한 class $$c_i$$로 분류하는 NBC를 설계한다면, 우리는 $$P(c_i|\mathcal{D})$$를 계산해야 할 것이다. 만약 $$\mathcal{D}$$가 다수의 요소 {e_1, e_2, ..., e_N}으로 구성된 데이터라면, 우리는 아래의 식 (3)과 같은 확률을 계산해야 한다.
+주어진 데이터 $$\mathcal{D}$$에 대하여 해당 데이터를 어떠한 class $$c_i$$로 분류하는 NBC를 설계한다면, 우리는 $$P(c_i|\mathcal{D})$$를 계산해야 할 것이다. 만약 $$\mathcal{D}$$가 다수의 요소 $${e_1, e_2, ..., e_N}$$으로 구성된 데이터라면, 우리는 아래의 식 (3)과 같은 확률을 계산해야 한다.
 
 $$
 P(c_i|\mathcal{D}) = P(c_i|e_1, e_2, ..., e_N)
@@ -36,3 +36,4 @@ $$
 P(c_i|\mathcal{D}) = P(c_i|e_1, e_2, ..., e_N) = \frac{P(e_1, e_2, ..., e_N|c_i)P(c_i)}{P(\mathcal{D})}
 $$
 
+그러나 식 (3)을 계산할 때 해결이 불가능할 수도 있는 큰 문제가 발생하는데, $$P(c_i|e_1, e_2, ..., e_N)$$의 계산이 불가능하거나 또는 막대한 양의 계산이 필요할 수 있다. 이러한 문제를 해결하기 위해 NBC는 **입력을 구성하는 각각의 요소가 관측될 확률은 서로 독립적이다**라는 **naive**한 가정을 한다.
