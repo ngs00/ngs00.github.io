@@ -87,6 +87,6 @@ Classifier를 discriminant function 계산하여 계산된 값으로 class를 �
 <img src="https://cloud.githubusercontent.com/assets/26436995/24494478/5d391d68-156d-11e7-8416-cd5d9f2f7238.png" width="500" />
 <p>그림 3. Discriminant function 기반의 classifier</p>
 </div>
-이러한 관점은 매우 일반적이어서, Restricted Boltzmann Machine을 비롯한 많은 확률기반의 머신러닝 모델들은 그림 3과 같은 구조를 갖는다.
+이러한 관점은 매우 일반적이어서, Restricted Boltzmann Machine을 비롯한 많은 확률기반의 머신러닝 모델들은 위와 같은 구조를 갖는다.
 <br />
 지금까지 Bayesian decision theory의 이론적인 배경과 이를 이용하여 classifier를 설계하는 관점에 대해 설명하였다. 다음 글에서는 Bayesian decision theory와 몇 가지 가정을 혼합한 가장 간단한 형태의 Naive Bayes Classifer에 대해 소개할 것이다.
