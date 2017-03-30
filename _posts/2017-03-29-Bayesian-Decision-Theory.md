@@ -76,17 +76,17 @@ $$
 Discriminant function $$g(\boldsymbol{x}, w_i)$$는 classifier의 설계 목적에 따라 여러 형태로 정의될 수 있다. 앞에서 정의한 conditional risk를 이용하여 정의한다면, $$g(\boldsymbol{x}, w_i) = -R(\alpha_i|\boldsymbol{x})$$의 형태로 discriminant function을 표현할 수 있다. 만약 어떠한 함수 $$f$$가 단조증가함수 (monotonically increasing function)라면, discriminant function을 $$f(g(w_i|\boldsymbol{x}))$$로 정의하여도 decision rule은 변하지 않는다. 이러한 변환은 classifer의 결과에 영향을 주지 않으면서, 계산을 쉽게 만들기 위해 많이 사용된다.
 <br />
 만약 $$C$$개의 discriminant function이 있다면, 이 함수들은 *decision region*이라고 정의되는 공간을 $$C$$개의 영역으로 분할할 것이다 [그림 2].
-<p class="wrapper-img">
+<div class="wrapper-img">
 <img src="https://cloud.githubusercontent.com/assets/26436995/24494461/50432c02-156d-11e7-84ec-0814242c40db.png" width="350" />
 <p>그림 2. Decision regions and decision boundaries</p>
-</p>
+</div>
 위의 그림에서 각 decision region의 경계를 *decision boundary*라고 하며, 이러한 경계는 discriminant function $$g(\boldsymbol{x}, w_i)$$에 의해 정의된다.
 <br />
 Classifier를 discriminant function 계산하여 계산된 값으로 class를 결정하는 network 또는 machine이라고 생각하면, 우리가 설계하고자 하는 classifier는 그림 3과 같은 구조로 표현된다.
-<p class="wrapper-img">
+<div class="wrapper-img">
 <img src="https://cloud.githubusercontent.com/assets/26436995/24494478/5d391d68-156d-11e7-8416-cd5d9f2f7238.png" width="500" />
 <p>그림 3. Discriminant function 기반의 classifier</p>
-</p>
+</div>
 이러한 관점은 매우 일반적이어서, Restricted Boltzmann Machine을 비롯한 많은 확률기반의 머신러닝 모델들은 그림 3과 같은 구조를 갖는다.
 <br />
 지금까지 Bayesian decision theory의 이론적인 배경과 이를 이용하여 classifier를 설계하는 관점에 대해 설명하였다. 다음 글에서는 Bayesian decision theory와 몇 가지 가정을 혼합한 가장 간단한 형태의 Naive Bayes Classifer에 대해 소개할 것이다.
