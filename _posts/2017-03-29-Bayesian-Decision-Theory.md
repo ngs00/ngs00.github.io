@@ -77,7 +77,7 @@ Discriminant function $$g(\boldsymbol{x}, w_i)$$는 classifier의 설계 목적�
 <br />
 만약 $$C$$개의 discriminant function이 있다면, 이 함수들은 *decision region*이라고 정의되는 공간을 $$C$$개의 영역으로 분할할 것이다 [그림 2].
 
-![](https://cloud.githubusercontent.com/assets/26436995/24494461/50432c02-156d-11e7-84ec-0814242c40db.png | width=400)
+<img src="https://cloud.githubusercontent.com/assets/26436995/24494461/50432c02-156d-11e7-84ec-0814242c40db.png" width="400" />
 
 위의 그림에서 각 decision region의 경계를 *decision boundary*라고 하며, 이러한 경계는 discriminant function $$g(\boldsymbol{x}, w_i)$$에 의해 정의된다.
 <br />
