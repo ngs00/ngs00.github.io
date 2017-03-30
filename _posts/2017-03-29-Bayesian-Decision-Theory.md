@@ -73,4 +73,4 @@ $$
 g(\boldsymbol{x}, w_i) > g(\boldsymbol{x}, w_j) \qquad \text{for all $i /neq j$}
 $$
 
-
+Discriminant function $$g(\boldsymbol{x}, w_i)$$는 classifier의 설계 목적에 따라 여러 형태로 정의될 수 있다. 앞에서 정의한 conditional risk를 이용하여 정의한다면, $$g(\boldsymbol{x}, w_i) = -R(\alpha_i|\boldsymbol{x})$$의 형태로 discriminant function을 표현할 수 있다. 만약 어떠한 함수 $$f$$가 단조증가함수 (monotonically increasing function)라면, discriminant function을 $$f(g(w_i|\boldsymbol{x}))$$로 정의하여도 decision rule은 변하지 않는다. 이러한 변환은 classifer의 결과에 영향을 주지 않으면서, 계산을 쉽게 만들기 위해 많이 사용된다.
