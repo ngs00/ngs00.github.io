@@ -78,3 +78,7 @@ Discriminant function $$g(\boldsymbol{x}, w_i)$$는 classifier의 설계 목적�
 만약 $$C$$개의 discriminant function이 있다면, 이 함수들은 *decision region*이라고 정의되는 공간을 $$C$$개의 영역으로 분할할 것이다 [그림 2].
 
 위의 그림에서 각 decision region의 경계를 *decision boundary*라고 하며, 이러한 경계는 discriminant function $$g(\boldsymbol{x}, w_i)$$에 의해 정의된다.
+<br />
+Classifier를 discriminant function 계산하여 계산된 값으로 class를 결정하는 network 또는 machine이라고 생각하면, 우리가 설계하고자 하는 classifier는 그림 3과 같은 구조로 표현된다.
+
+이러한 관점은 매우 일반적이어서, Restricted Boltzmann Machine을 비롯한 많은 확률기반의 머신러닝 모델들은 그림 3과 같은 구조를 갖는다.
