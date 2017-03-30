@@ -28,6 +28,7 @@ $$
 $$
 P(error) = \int_{-\infty}^\infty P(error, x) dx = \int_{-\infty}^\infty P(error|x)p(x) dx
 $$
+
 Probability error는 항상 0보다 크거나 같은 값을 갖기 때문에 $P(error|x)$를 최소화하는 것은 식 (2)를 최소화 하는 것과 같다. 따라서, 식 (1)과 같이 결정하는 것은 전체적인 probability error를 최소화한다.
 <br />
 위에서 설명한 바와 같이 $P(w|x)$를 이용하여 결정을 내리면, 우리는 probability error를 최소화 할 수 있다. 따라서, 이러한 최적의 결정을 내리기 위해서는 입력이 주어질 때마다 정확한 $P(w|x)$를 계산할 수 있어야 한다. 현실적으로 $P(w|x)$를 직접 계산하는 것은 매우 어렵거나 불가능하기 때문에 우리는 식 (3)과 같이 정의되는 *Bayes' theorem*을 이용하여 간접적으로 $P(w|x)$를 계산한다.
@@ -45,6 +46,7 @@ P(w_2|x),  & \text{if $p(x|w_1)P(w_1)$ > $p(x|w_2)P(w_2)$} \\
 P(w_1|x), & \text{otherwise}
 \end{cases}
 $$
+
 많은 경우에 Bayes' theorem을 이용하여 식 (1)을 식 (3)과 같은 형태로 변형하면, 계산이 불가능했던 식이 계산 가능한 형태로 변형된다.
 <br />
 ### Generalization of Bayesian decision theory
@@ -68,7 +70,7 @@ $$
 어떠한 classifier를 설계할 때, 가장 직관적이고 단순한 방법은 *discriminant function* $$g(\boldsymbol{x}, w_i)$$를 이용하는 것이다. 만약, 주어진 입력 $$\boldsymbol{x}$$에 대해서 다음의 식 (7)이 성립한다면, classifier는 $$\boldsymbol{x}$$를 $$w_i$$로 할당할 것이다.
 
 $$
-g(\boldsymbol{x}, w_i) > g(\boldsymbol{x}, w_j) \qqad for all i /neq j
+g(\boldsymbol{x}, w_i) > g(\boldsymbol{x}, w_j) \qquad \text{for all $i /neq j$}
 $$
 
 
