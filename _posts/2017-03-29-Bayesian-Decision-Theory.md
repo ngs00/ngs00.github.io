@@ -82,3 +82,5 @@ Discriminant function $$g(\boldsymbol{x}, w_i)$$는 classifier의 설계 목적�
 Classifier를 discriminant function 계산하여 계산된 값으로 class를 결정하는 network 또는 machine이라고 생각하면, 우리가 설계하고자 하는 classifier는 그림 3과 같은 구조로 표현된다.
 
 이러한 관점은 매우 일반적이어서, Restricted Boltzmann Machine을 비롯한 많은 확률기반의 머신러닝 모델들은 그림 3과 같은 구조를 갖는다.
+<br />
+지금까지 Bayesian decision theory의 이론적인 배경과 이를 이용하여 classifier를 설계하는 관점에 대해 설명하였다. 다음 글에서는 Bayesian decision theory와 몇 가지 가정을 혼합한 가장 간단한 형태의 Naive Bayes Classifer에 대해 소개할 것이다.
