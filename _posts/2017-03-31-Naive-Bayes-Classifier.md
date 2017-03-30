@@ -15,7 +15,7 @@ $$
 P(B|A) = \frac{P(A,B)}{P(A)}
 $$
 
-이러한 conditional probability $$P(B|A)$$는 Bayes's theorem 이라는 것에 의해 아래의 식 (2)와 같이 계산될 수 있다.
+이러한 conditional probability는 Bayes's theorem 이라는 것에 의해 아래의 식 (2)와 같이 계산될 수 있다.
 
 $$
 P(B|A) = \frac{P(A|B)P(B)}{P(A)}
