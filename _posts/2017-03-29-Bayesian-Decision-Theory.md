@@ -70,7 +70,7 @@ $$
 어떠한 classifier를 설계할 때, 가장 직관적이고 단순한 방법은 *discriminant function* $$g(\boldsymbol{x}, w_i)$$를 이용하는 것이다. 만약, 주어진 입력 $$\boldsymbol{x}$$에 대해서 다음의 식 (7)이 성립한다면, classifier는 $$\boldsymbol{x}$$를 $$w_i$$로 할당할 것이다.
 
 $$
-g(\boldsymbol{x}, w_i) > g(\boldsymbol{x}, w_j) \qquad \text{for all $i$ $/neq$ $j$}
+g(\boldsymbol{x}, w_i) > g(\boldsymbol{x}, w_j) \qquad \text{for all} i /neq j
 $$
 
 Discriminant function $$g(\boldsymbol{x}, w_i)$$는 classifier의 설계 목적에 따라 여러 형태로 정의될 수 있다. 앞에서 정의한 conditional risk를 이용하여 정의한다면, $$g(\boldsymbol{x}, w_i) = -R(\alpha_i|\boldsymbol{x})$$의 형태로 discriminant function을 표현할 수 있다. 만약 어떠한 함수 $$f$$가 단조증가함수 (monotonically increasing function)라면, discriminant function을 $$f(g(w_i|\boldsymbol{x}))$$로 정의하여도 decision rule은 변하지 않는다. 이러한 변환은 classifer의 결과에 영향을 주지 않으면서, 계산을 쉽게 만들기 위해 많이 사용된다.
