@@ -3,6 +3,7 @@ layout: default
 ---
 
 <div class="posts">
+  <article class="post">
   <ul >
     {% for post in site.posts limit 4 %}
     <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
@@ -10,4 +11,5 @@ layout: default
             <a href="{{ post.url }}">Read more...</a><br><br>
     {% endfor %}
   </ul>
+  </article>
 </div>
