@@ -44,4 +44,5 @@ $$
 \frac{P(e_1, e_2, ..., e_N|c_i)P(c_i)}{P(\mathcal{D})} \approx P(e_1|c_i)P(e_2|c_i) ... P(e_N|c_i)P(c_i)
 $$
 
+
 위의 식에서 $$P(e_j|c_i)$$는 class $$c_i$$일 때, 어떠한 요소 $$e_j$$가 나타날 확률이므로 비교적 쉽게 계산할 수 있다.
