@@ -53,43 +53,45 @@ $$
 <br />
 ### Example
 이 항목에서는 간단한 형태의 NBC를 이용하여 주제별 문서 분류 classifier 설계 방법에 대해 서술한다. 먼저, classifier를 학습시키기 위한 training set이 다음과 같이 주어졌다고 가정한다.
-<table>
-    <thead>
-        <tr>
-            <th>Training instance</th>
-            <th>Elements</th>
-            <th>Target class</th>
-        </tr>
-    </thead>
+<div class="wrapper-table">
+    <table>
+        <thead>
+            <tr>
+                <th>Training instance</th>
+                <th>Elements</th>
+                <th>Target class</th>
+            </tr>
+        </thead>
 
-    <tbody>
-        <tr>
-            <td>instance 1</td>
-            <td>function, class, struct, pointer</td>
-            <td>C/C++</td>
-        </tr>
-        <tr>
-            <td>instance 2</td>
-            <td>method, class, int</td>
-            <td>Java</td>
-        </tr>
-        <tr>
-            <td>instance 3</td>
-            <td>pointer, array, int, float</td>
-            <td>C/C++</td>
-        </tr>
-        <tr>
-            <td>instance 4</td>
-            <td>final, int, float</td>
-            <td>Java</td>
-        </tr>
-        <tr>
-            <td>instance 5</td>
-            <td>string, array, synchronized</td>
-            <td>Java</td>
-        </tr>
-    </tbody>
-</table>
+        <tbody>
+            <tr>
+                <td>instance 1</td>
+                <td>function, class, struct, pointer</td>
+                <td>C/C++</td>
+            </tr>
+            <tr>
+                <td>instance 2</td>
+                <td>method, class, int</td>
+                <td>Java</td>
+            </tr>
+            <tr>
+                <td>instance 3</td>
+                <td>pointer, array, int, float</td>
+                <td>C/C++</td>
+            </tr>
+            <tr>
+                <td>instance 4</td>
+                <td>final, int, float</td>
+                <td>Java</td>
+            </tr>
+            <tr>
+                <td>instance 5</td>
+                <td>string, array, synchronized</td>
+                <td>Java</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 우리의 목적은 training set으로부터 결정을 내리기 위해 필요한 $$P(e_m|c_i)$$와 $$P(C_i)$$를 계산하는 것이다. 먼저, $$P(e_m|c_i)$$는 class $$c_i$$일 때, $$e_m$$이라는 요소가 나타날 확률을 의미하므로, $$c_i$$에 포함된 전체 요소 중에 $$e_m$$에 해당하는 요소가 몇 개 있는지를 알면 계산할 수 있다. 예를 들어, class Java의 몇 가지 요소에 대한 확률은 다음과 같이 계산될 수 있다.
 
 $$
