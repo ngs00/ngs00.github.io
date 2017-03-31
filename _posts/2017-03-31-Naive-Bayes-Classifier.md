@@ -1,6 +1,6 @@
 ---
 type: post
-title: Naive Bayes Classifier (NBC)
+title: Naive Bayes Classifier
 category: Pattern Classification
 ---
 
