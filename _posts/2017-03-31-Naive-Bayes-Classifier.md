@@ -113,11 +113,42 @@ $$
 첫 번째 문제를 해결하기 위한 방법으로는 Laplace smoothing이 있으며, 두 번째 문제에 대해서는 Log probability를 이용함으로써 해결한다.
 <br />
 ### Laplace smoothing
-Training set에 제시되어 있지 않은 요소에 대한 확률이 항상 0으로 계산되는 문제를 해결하기 위해 NBC에서는 Laplace smoothing을 이용한다. Laplace smoothing을 적용한 $$P(e_m|c_i)$$는 아래의 식 (8)과 같이 정의된다.
+Training set에 제시되어 있지 않은 요소에 대한 확률이 항상 0으로 계산되어 다른 정보들이 모두 무시되는 문제를 해결하기 위해 NBC에서는 Laplace smoothing을 이용한다. Laplace smoothing을 적용한 $$P(e_m|c_i)$$는 아래의 식 (8)과 같이 정의된다 [2].
 
 $$
-P(e_m|c_i) = \frac{count(e_m)}{|c_i| + |u_i|}}
+P(e_m|c_i) = \frac{count(e_m, c_i) + 1}{|c_i| + |u_i|}}
 $$
 
-위의 식에서 $$count(e_m)$$은 training set에 $$e_m$$이 나타나는 횟수이고, $$|c_i|$$와 $$|u_i|$$는 각각 class $$c_i$$에 있는 모든 element의 수와 $$c_i$$에 있는 element 중에서 중복된 element를 하나로 취급했을 때의 element의 수이다.
+위의 식에서 $$count(e_m, c_i)$$는 training set에서 $$e_m$$이 $$c_i$$일 때 나타나는 횟수이고, $$|c_i|$$와 $$|u_i|$$는 각각 class $$c_i$$에 있는 모든 element의 수와 $$c_i$$에 있는 element 중에서 중복된 element를 하나로 취급했을 때의 element의 수이다. 예를 들어, Laplace smoothing을 적용한 $$P(int|Java)$$는 다음과 같이 계산된다.
 
+$$
+P(int|Java) = \frac{2 + 1}{9 + 8} = \frac{3}{17}
+$$
+
+또한, training set에 포함되어 있지 않은 *while*이라는 요소에 대해서도 다음과 같이 0이 아닌 아주 작은 값의 확률을 갖는다.
+
+$$
+P(while|Java) = \frac{0 + 1}{9 + 8}
+
+이와 같이 Laplace smoothing을 적용함으로써 training set에 나타나지 않은 요소가 있어도 계산된 확률이 0이 되는 문제를 해결할 수 있다.
+<br />
+### Log probability
+믾은 확률, 머신러닝 문제를 보면 확률에 Log 함수를 적용하여 문제를 해결하는 경우를 볼 수있다. NBC에서는 식 (9)와 (1) 같은 작은 값을 갖는 확률들이 계속 곱해져서 전체 확률이 컴퓨터상에서 표현이 불가능할 정도로 작아지는 문제를 해결하기 위해 Log 함수를 이용한다. 이외에도 Log 함수는 확률과 관련된 문제를 풀 때 많은 이점을 갖고 있는데, 크게 세 가지로 정리하면 다음과 같다.
+
+<ul>
+	<li>곱으로 표현되는 식에 Log 함수를 적용하면, 식이 합으로 표현되기 때문에 작은 값을 갖는 확률들이 계속 곱해져서 전체 확률이 컴퓨터상에서 표현이 불가능할 정도로 작아지는 문제를 해결할 수 있다.</li>
+    <li>곱을 합으로 표현하는 Log 함수의 특성은 데이터의 손실을 방지하는 것뿐만 아니라, 식의 계산 또는 유도시에 식을 더욱 이해하기 쉬운 형태로 변형시켜준다.</li>
+    <li>함수의 정의에 의해 Log 함수는 단조증가함수 (monotonically increasing function)이기 때문에 원래의 확률에 Log 함수를 적용하여도 그 결과는 변하지 않는다.</li>
+</ul>
+
+식 (5)에 Log 함수를 적용하면, 아래와 같은 식을 얻을 수 있다.
+
+$$
+P(e_1|c_i)P(e_2|c_i) ... P(e_M|c_i)P(c_i) = \ln P(e_1|c_i) + \ln P(e_2|c_i) + ... + \ln P(e_M|c_i) + \ln P(c_i)
+$$
+
+NBC를 구현할 때는 식 (5)가 아니라 위의 식을 이용하여 확률을 계산하도록 구현한다.
+
+<br />
+### Classification problem example
+이 항목에서는 앞의 표 1에 있는 training set을 이용하여, 단어들이 주어졌을 때 해당 입력이 C/C++ 또는 Java에 속하는지를 판별하는 NBC의 동작 과정을 설명한다.
