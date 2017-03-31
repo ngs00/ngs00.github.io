@@ -108,3 +108,15 @@ $$
     <li>Training set에 제시되어 있지 않은 요소에 대한 확률은 항상 0으로 계산된다.</li>
     <li>확률은 항상 1보다 작거나 같은 값을 갖기 때문에 training instance들을 구성하는 element의 수가 많아지면, 식 (5)의 값이 너무 확률의 작아져서 비교가 어려워진다.</li>
 </ul>
+
+첫 번째 문제를 해결하기 위한 방법으로는 Laplace smoothing이 있으며, 두 번째 문제에 대해서는 Log probability를 이용함으로써 해결한다.
+<br />
+### Laplace smoothing
+Training set에 제시되어 있지 않은 요소에 대한 확률이 항상 0으로 계산되는 문제를 해결하기 위해 NBC에서는 Laplace smoothing을 이용한다. Laplace smoothing을 적용한 $$P(e_m|c_i)$$는 아래의 식 (8)과 같이 정의된다.
+
+$$
+P(e_m|c_i) = \frac{count(e_m)}{|c_i| + |u_i|}}
+$$
+
+위의 식에서 $$count(e_m)$$은 training set에 $$e_m$$이 나타나는 횟수이고, $$|c_i|$$와 $$|u_i|$$는 각각 class $$c_i$$에 있는 모든 element의 수와 $$c_i$$에 있는 element 중에서 중복된 element를 하나로 취급했을 때의 element의 수이다.
+
