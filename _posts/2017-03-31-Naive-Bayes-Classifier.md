@@ -101,3 +101,10 @@ $$
 $$
 P(int|Java) = \frac{2}{9}
 $$
+
+그러나 NBC를 실제로 구현할 때는 위와 같은 방법으로 확률을 계산하지 않는데, 그 이유는 아래와 같다.
+
+\begin{itemize}
+\item Training set에 제시되어 있지 않은 요소에 대한 확률은 항상 0으로 계산된다.
+\item 확률은 항상 1보다 작거나 같은 값을 갖기 때문에 training instance들을 구성하는 element의 수가 많아지면, 식 (5)의 값이 너무 확률의 작아져서 비교가 어려워진다.
+\end{itemize}
