@@ -54,10 +54,40 @@ $$
 ### Example
 이 항목에서는 간단한 형태의 NBC를 이용하여 주제별 문서 분류 classifier 설계 방법에 대해 서술한다. 먼저, classifier를 학습시키기 위한 training set이 다음과 같이 주어졌다고 가정한다.
 
-| Training instance |           Elements             | Target class |
-|:------------------|:-------------------------------|:-------------|
-| instance 1        |function, class, struct, pointer|C/C++         |
-| instance 2        |method, class, int              |Java          |
-| instance 3        |pointer, array, int, float      |C/C++         |
-| instance 4        |final, int, float               |Java          |
-| instance 5        |string, array, synchronized     |Java          |
+<table>
+    <thead>
+        <tr>
+            <th>Training instance</th>
+            <th>Elements</th>
+            <th>Target class</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>instance 1</td>
+            <td>function, class, struct, pointer</td>
+            <td>C/C++</td>
+        </tr>
+        <tr>
+            <td>instance 2</td>
+            <td>method, class, int</td>
+            <td>Java</td>
+        </tr>
+        <tr>
+            <td>instance 3</td>
+            <td>pointer, array, int, float</td>
+            <td>C/C++</td>
+        </tr>
+        <tr>
+            <td>instance 4</td>
+            <td>final, int, float</td>
+            <td>Java</td>
+        </tr>
+        <tr>
+            <td>instance 5</td>
+            <td>string, array, synchronized</td>
+            <td>Java</td>
+        </tr>
+    </tbody>
+</table>
