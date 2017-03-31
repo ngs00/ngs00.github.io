@@ -124,9 +124,11 @@ P(int|Java) = \frac{2 + 1}{9 + 8} = \frac{3}{17}
 $$
 
 또한, training set에 포함되어 있지 않은 *while*이라는 요소에 대해서도 다음과 같이 0이 아닌 아주 작은 값의 확률을 갖는다.
+
 $$
 P(while|Java) = \frac{0 + 1}{9 + 8}
 $$
+
 이와 같이 Laplace smoothing을 적용함으로써 training set에 나타나지 않은 요소가 있어도 계산된 확률이 0이 되는 문제를 해결할 수 있다.
 <br />
 ### Log probability
