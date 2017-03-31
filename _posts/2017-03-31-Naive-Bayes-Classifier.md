@@ -120,17 +120,13 @@ P(e_m|c_i) = \frac{count(e_m, c_i) + 1}{|c_i| + |u_i|}
 $$
 
 위의 식에서 $$count(e_m, c_i)$$는 training set에서 $$e_m$$이 $$c_i$$일 때 나타나는 횟수이고, $$|c_i|$$와 $$|u_i|$$는 각각 class $$c_i$$에 있는 모든 element의 수와 $$c_i$$에 있는 element 중에서 중복된 element를 하나로 취급했을 때의 element의 수이다. 예를 들어, Laplace smoothing을 적용한 $$P(int|Java)$$는 다음과 같이 계산된다.
-
 $$
 P(int|Java) = \frac{2 + 1}{9 + 8} = \frac{3}{17}
 $$
-
 또한, training set에 포함되어 있지 않은 *while*이라는 요소에 대해서도 다음과 같이 0이 아닌 아주 작은 값의 확률을 갖는다.
-
 $$
 P(while|Java) = \frac{0 + 1}{9 + 8}
 $$
-
 이와 같이 Laplace smoothing을 적용함으로써 training set에 나타나지 않은 요소가 있어도 계산된 확률이 0이 되는 문제를 해결할 수 있다.
 <br />
 ### Log probability
