@@ -129,6 +129,7 @@ $$
 
 $$
 P(while|Java) = \frac{0 + 1}{9 + 8}
+$$
 
 이와 같이 Laplace smoothing을 적용함으로써 training set에 나타나지 않은 요소가 있어도 계산된 확률이 0이 되는 문제를 해결할 수 있다.
 <br />
