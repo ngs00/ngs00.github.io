@@ -91,6 +91,6 @@ Classifier를 discriminant function 계산하여 계산된 값으로 class를 �
 <br />
 지금까지 Bayesian decision theory의 이론적인 배경과 이를 이용하여 classifier를 설계하는 관점에 대해 설명하였다. Bayesian decision theory의 실질적 활용을 보여주기 위해 <a href="https://ngs00.github.io/Naive-Bayes-Classifier/">다음 글</a>에서는 Bayesian decision theory와 몇 가지 가정을 혼합한 가장 간단한 형태의 Naive Bayes Classifer에 대해 소개할 것이다.
 <br />
-#### Reference
+#### References
 [1] Richard O. Duda, Peter E. Hart, David G. Stork (2001). *Pattern Classification (2nd edition).* John Wiley & Sons.
 <br />
