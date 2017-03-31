@@ -29,9 +29,9 @@ $$
 P(error) = \int_{-\infty}^\infty P(error, x) dx = \int_{-\infty}^\infty P(error|x)p(x) dx
 $$
 
-Probability error는 항상 0보다 크거나 같은 값을 갖기 때문에 $P(error|x)$를 최소화하는 것은 식 (2)를 최소화 하는 것과 같다. 따라서, 식 (1)과 같이 결정하는 것은 전체적인 probability error를 최소화한다.
+Probability error는 항상 0보다 크거나 같은 값을 갖기 때문에 $P(error|x)$를 최소화하는 것은 식 (2)를 최소화하는 것과 같다. 따라서, 식 (1)과 같이 결정하는 것은 전체적인 probability error를 최소화한다.
 <br />
-위에서 설명한 바와 같이 $P(w|x)$를 이용하여 결정을 내리면, 우리는 probability error를 최소화 할 수 있다. 따라서, 이러한 최적의 결정을 내리기 위해서는 입력이 주어질 때마다 정확한 $P(w|x)$를 계산할 수 있어야 한다. 현실적으로 $P(w|x)$를 직접 계산하는 것은 매우 어렵거나 불가능하기 때문에 우리는 식 (3)과 같이 정의되는 *Bayes' theorem*을 이용하여 간접적으로 $P(w|x)$를 계산한다.
+위에서 설명한 바와 같이 $P(w|x)$를 이용하여 결정을 내리면, 우리는 probability error를 최소화할 수 있다. 따라서, 이러한 최적의 결정을 내리기 위해서는 입력이 주어질 때마다 정확한 $P(w|x)$를 계산할 수 있어야 한다. 현실적으로 $P(w|x)$를 직접 계산하는 것은 매우 어렵거나 불가능하기 때문에 우리는 식 (3)과 같이 정의되는 *Bayes' theorem*을 이용하여 간접적으로 $P(w|x)$를 계산한다.
 
 $$
 P(w|x) = \frac{p(x|w)P(w)}{p(x)}
@@ -92,5 +92,5 @@ Classifier를 discriminant function 계산하여 계산된 값으로 class를 �
 지금까지 Bayesian decision theory의 이론적인 배경과 이를 이용하여 classifier를 설계하는 관점에 대해 설명하였다. Bayesian decision theory의 실질적 활용을 보여주기 위해 <a href="https://ngs00.github.io/Naive-Bayes-Classifier/">다음 글</a>에서는 Bayesian decision theory와 몇 가지 가정을 혼합한 가장 간단한 형태의 Naive Bayes Classifer에 대해 소개할 것이다.
 <br />
 #### Reference
-[1] Richard O. Duda, Peter E. Hart, David G. Stork (2001). *Pattern Classification (2th edition).* John Wiley & Sons.
+[1] Richard O. Duda, Peter E. Hart, David G. Stork (2001). *Pattern Classification (2nd edition).* John Wiley & Sons.
 <br />
