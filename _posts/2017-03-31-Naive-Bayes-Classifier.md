@@ -23,7 +23,7 @@ $$
 
 NBC는 입력 데이터에 포함된 어떤 요소가 나타날 때, 주어진 입력이 어떠한 class에 속할 확률을 비교하여 가장 높은 확률을 갖는 class로 데이터를 할당하도록 동작한다 [그림 1].
 <div class="wrapper-img">
-<img src="https://cloud.githubusercontent.com/assets/26436995/24494461/50432c02-156d-11e7-84ec-0814242c40db.png" width="350" />
+<img src="https://cloud.githubusercontent.com/assets/26436995/24494478/5d391d68-156d-11e7-8416-cd5d9f2f7238.png" width="500" />
 <p>그림 1. The model structure of Naive Bayes Classifier</p>
 </div>
 이러한 동작은 <a href="https://ngs00.github.io/Bayesian-Decision-Theory/">앞의 글</a>에서 설명한 *discriminant function*기반의 network와 매우 유사하다. NBC는 주어진 입력을 분류하기 위해 Bayes' theorem을 이용하기 때문에 Naive "Bayes" Classifier라는 명칭이 붙었다.
