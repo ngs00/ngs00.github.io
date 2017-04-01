@@ -152,7 +152,7 @@ NBC를 구현할 때는 식 (5)가 아니라 식 (11)을 이용하여 확률을 
 <br />
 ### Classification problem example
 이 예제에서는 앞의 표 1에 있는 training set을 이용하여, 문장 (단어들의 나열)이 주어졌을 때 해당 입력이 C/C++ 또는 Java에 속하는지를 판별하는 NBC의 동작 과정을 설명한다. 예를 들어, *"It has struct, int, float"*이라는 입력 $$s$$가 입력되었을 때, NBC는 다음과 같이 동작한다.
-<br />
+<br class="br-small" />
 ##### 1) Conditional probability 계산
 앞의 표 1에서 주어진 training set에는 C/C++, Java라는 두 개의 class가 명시되어 있다. conditional probability를 계산하기 전에 입력 $$s$$에 대해 적절한 전처리를 하여 입력 $$s$$를 [it, has, struct, int, float]라는 5차원 벡터로 변형하였다고 가정한다. 이러한 전처리 또한 매우 활발히 연구되고 있는 분야이며, 적절한 전처리를 머신러닝 모델의 성능을 크게 향상시킬 수 있다. 전처리된 데이터에 대해 식 (11)을 이용하여 $$P(c_i|\mathcal{D})$$를 다음과 같이 계산한다. 이 예제에서 $$c_1$$은 C/C++, $$c_2$$는 Java를 의미한다.
 
@@ -166,7 +166,7 @@ $$
 \end{aligned}
 $$
 
-<br />
+<br class="br-small" />
 
 $$
 \begin{aligned}
