@@ -167,11 +167,13 @@ $$
 <br />
 
 $$
+\begin{aligned}
 \log P(c_2|\mathcal{D}) \approx & \log P(it|c_2) + \log P(has|c_2) + \log P(struct|c_2) \\
 + & \log P(int|c_2) + \log P(float|c_2) + \log P(c_2) \\
 = & \log(\frac{0 + 1}{9 + 11}) + \log(\frac{0 + 1}{9 + 11}) + \log(\frac{0 + 1}{9 + 11}) \\
 + & \log(\frac{2 + 1}{9 + 11}) + \log(\frac{1 + 1}{9 + 11}) + \log(\frac{3}{5}) \\
 \fallingdotseq & -13.6977
+\end{aligned}
 $$
 
 <br />
