@@ -167,13 +167,13 @@ $$
 <br />
 
 $$
-\log P(c_2|\mathcal{D}) \approx \log P(it|c_2) + \log P(has|c_2) + \log P(struct|c_2) \\
-+ \log P(int|c_2) + \log P(float|c_2) + \log P(c_2) \\
-= \log(\frac{0 + 1}{9 + 11}) + \log(\frac{0 + 1}{9 + 11}) + \log(\frac{0 + 1}{9 + 11}) \\
-+ \log(\frac{2 + 1}{9 + 11}) + \log(\frac{1 + 1}{9 + 11}) + \log(\frac{3}{5}) \\
-\fallingdotseq -13.6977
+\log P(c_2|\mathcal{D}) \approx & \log P(it|c_2) + \log P(has|c_2) + \log P(struct|c_2) \\
++ & \log P(int|c_2) + \log P(float|c_2) + \log P(c_2) \\
+= & \log(\frac{0 + 1}{9 + 11}) + \log(\frac{0 + 1}{9 + 11}) + \log(\frac{0 + 1}{9 + 11}) \\
++ & \log(\frac{2 + 1}{9 + 11}) + \log(\frac{1 + 1}{9 + 11}) + \log(\frac{3}{5}) \\
+\fallingdotseq & -13.6977
 $$
 
 <br />
 ##### 2) Conditional probability 비교
-앞에서 계산한
+앞에서 계산한 log-conditional probability 중에서 가장 큰 값은 C/C++에 대한 값인 -13.1536이므로, 주어진 문장 *It has struct, int, float*은 C/C++로 분류된다.
