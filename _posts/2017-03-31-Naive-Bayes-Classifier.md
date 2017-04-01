@@ -119,16 +119,16 @@ $$
 P(e_m|c_i) = \frac{count(e_m, c_i) + 1}{|c_i| + |u_i|}
 $$
 
-위의 식에서 $$count(e_m, c_i)$$는 training set에서 $$e_m$$이 $$c_i$$일 때 나타나는 횟수이고, &#124;$$c_i$$&#124;와 &#124;$$u_i$$&#124;는 각각 class $$c_i$$에 있는 모든 element의 수와 $$c_i$$에 있는 element 중에서 중복된 element를 하나로 취급했을 때의 element의 수이다. 예를 들어, Laplace smoothing을 적용한 $$P(int$$&#124;$$Java)$$는 다음과 같이 계산된다.
+위의 식에서 $$count(e_m, c_i)$$는 training set에서 $$e_m$$이 $$c_i$$일 때 나타나는 횟수이고, &#124;$$c_i$$&#124;와 &#124;$$u_i$$&#124;는 각각 class $$c_i$$에 있는 모든 element의 수와 모든 클래스에서  ement의 수이다. 예를 들어, Laplace smoothing을 적용한 $$P(int$$&#124;$$Java)$$는 다음과 같이 계산된다.
 
 $$
-P(int|Java) = \frac{2 + 1}{9 + 8} = \frac{3}{17}
+P(int|Java) = \frac{2 + 1}{9 + 11} = \frac{3}{20}
 $$
 
 또한, training set에 포함되어 있지 않은 *while*이라는 요소에 대해서도 다음과 같이 0이 아닌 아주 작은 값의 확률을 갖는다.
 
 $$
-P(while|Java) = \frac{0 + 1}{9 + 8}
+P(while|Java) = \frac{0 + 1}{9 + 11}
 $$
 
 이와 같이 Laplace smoothing을 적용함으로써 training set에 나타나지 않은 요소가 있어도 계산된 확률이 0이 되는 문제를 해결할 수 있다.
@@ -157,5 +157,6 @@ NBC를 구현할 때는 식 (5)가 아니라 식 (11)을 이용하여 확률을 
 앞의 표 1에서 주어진 training set에는 C/C++, Java라는 두 개의 class가 명시되어 있다. 그러므로, 주어진 입력 $$s$$에 대해 식 (11)을 이용하여 $$P(c_i|\mathcal{D})$$를 계산한다. 계산하기 전에 입력 $$s$$에 대해 적절한 전처리를 하여 입력 $$s$$를 [it, has, struct, int, float]라는 5차원 벡터로 변형하였다고 가정한다. 이러한 전처리 또한 매우 활발히 연구되고 있는 분야이며, 적절한 전처리를 머신러닝 모델의 성능을 크게 향상시킬 수 있다.
 
 $$
-\log P(c_1|\mathcal{D}) \appox \log P(it|c_1) + \log P(has|c_1) + \log P(struct|c_1) + \log P(int|c_1) + \log P(float|c_1) + \log P(c_1)
+\log P(c_1|\mathcal{D}) \appox \log P(it|c_1) + \log P(has|c_1) + \log P(struct|c_1) \\
++ \log P(int|c_1) + \log P(float|c_1) + \log P(c_1)
 $$
