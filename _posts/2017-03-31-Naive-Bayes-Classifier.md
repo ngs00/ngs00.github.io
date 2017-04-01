@@ -183,7 +183,9 @@ $$
 <br />
 #### References
 [1] Richard O. Duda, Peter E. Hart, David G. Stork (2001). *Pattern Classification (2nd edition).* John Wiley & Sons.  
-[2] Harry Zhang. 2004 *The Optimality of Naive Bayes*. Proceedings of the Seventeenth International Florida Artificial Intelligence Research Society Conference, Miami Beach, Florida, USA.  
-[3] Wenyuan Dai, Gui-Rong Xue, Qiang Yang and Yong Yu. 2007. Proceeding
-AAAI'07 Proceedings of the 22nd national conference on Artificial intelligence, Vol. 1, pp. 540-545.
+<br class="br-tiny" />
+[2] Harry Zhang, *"The Optimality of Naive Bayes"*, Proceedings of the Seventeenth International Florida Artificial Intelligence Research Society Conference, Miami Beach, Florida, USA, 2004.
+<br class="br-tiny" />
+[3] Wenyuan Dai, Gui-Rong Xue, Qiang Yang and Yong Yu, *"Transferring Naive Bayes Classifiers for Text Classification"*, Proceeding
+AAAI'07 Proceedings of the 22nd national conference on Artificial intelligence, Vol. 1, pp. 540-545, 2007.
 <br />
