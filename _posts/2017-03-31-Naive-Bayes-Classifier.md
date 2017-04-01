@@ -178,6 +178,10 @@ $$
 \end{aligned}
 $$
 
-<br />
+<br class="br-small" />
 <div class="title-small">2) Conditional probability 비교</div>
 앞에서 계산한 log-conditional probability 중에서 가장 큰 값은 C/C++에 대한 값인 -13.1536이므로, 주어진 문장 *"It has struct, int, float"*은 C/C++로 분류된다.
+<br />
+#### References
+[1] Richard O. Duda, Peter E. Hart, David G. Stork (2001). *Pattern Classification (2nd edition).* John Wiley & Sons.
+<br />
