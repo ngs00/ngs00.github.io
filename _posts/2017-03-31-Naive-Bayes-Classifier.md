@@ -160,12 +160,20 @@ $$
 \log P(c_1|\mathcal{D}) \approx \log P(it|c_1) + \log P(has|c_1) + \log P(struct|c_1) \\
 + \log P(int|c_1) + \log P(float|c_1) + \log P(c_1) \\
 = \log(\frac{0 + 1}{8 + 11}) + \log(\frac{0 + 1}{8 + 11}) + \log(\frac{2 + 1}{8 + 11}) \\
-+ \log(\frac{1 + 1}{8 + 11}) + \log(\frac{1 + 1}{8 + 11}) + \log(\frac{2}{5}
++ \log(\frac{1 + 1}{8 + 11}) + \log(\frac{1 + 1}{8 + 11}) + \log(\frac{2}{5}) \\
+\fallingdotseq -13.1536
 $$
+
+<br />
 
 $$
 \log P(c_2|\mathcal{D}) \approx \log P(it|c_2) + \log P(has|c_2) + \log P(struct|c_2) \\
 + \log P(int|c_2) + \log P(float|c_2) + \log P(c_2) \\
 = \log(\frac{0 + 1}{9 + 11}) + \log(\frac{0 + 1}{9 + 11}) + \log(\frac{0 + 1}{9 + 11}) \\
-+ \log(\frac{2 + 1}{9 + 11}) + \log(\frac{1 + 1}{9 + 11}) + \log(\frac{3}{5}
++ \log(\frac{2 + 1}{9 + 11}) + \log(\frac{1 + 1}{9 + 11}) + \log(\frac{3}{5}) \\
+\fallingdotseq -13.6977
 $$
+
+<br />
+##### 2) Conditional probability 비교
+앞에서 계산한
