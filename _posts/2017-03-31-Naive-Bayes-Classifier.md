@@ -15,7 +15,7 @@ $$
 P(B|A) = \frac{P(A,B)}{P(A)}
 $$
 
-이러한 conditional probability는 Bayes's theorem 이라는 것에 의해 아래의 식 (2)와 같이 계산될 수 있다.
+이러한 conditional probability는 Bayes's theorem이라는 것에 의해 아래의 식 (2)와 같이 계산될 수 있다.
 
 $$
 P(B|A) = \frac{P(A|B)P(B)}{P(A)}
@@ -107,7 +107,7 @@ $$
 
 <ul>
     <li>Training set에 제시되어 있지 않은 요소에 대한 확률은 항상 0으로 계산된다.</li>
-    <li>확률은 항상 1보다 작거나 같은 값을 갖기 때문에 training instance들을 구성하는 element의 수가 많아지면, 식 (5)의 값이 너무 확률의 작아져서 비교가 어려워진다.</li>
+    <li>확률은 항상 1보다 작거나 같은 값을 갖기 때문에 training instance들을 구성하는 element의 수가 많아지면, 확률의 곱으로 표현되는 식 (5)의 값이 너무 작아져서 비교가 어려워진다.</li>
 </ul>
 
 첫 번째 문제를 해결하기 위한 방법으로는 Laplace smoothing이 있으며, 두 번째 문제에 대해서는 Log probability를 이용함으로써 해결한다.
