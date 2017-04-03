@@ -8,7 +8,7 @@ Bayesian decision theory는 패턴 인식 문제를 풀기 위한 통계적 방�
 <br />
 예를 들어, 이 세상에 동물은 고양이와 개만 있다는 가정 하에 두 동물을 분류하는 classifier를 설계한다고 생각하자. 우리는 classifier를 설계하기 위해서 *state of nature*라고 불리는 변수 $$w$$를 도입할 수 있다. 이 변수가 $$\omega_1$$일 경우에는 고양이를 의미하며, $$\omega_2$$일 경우에는 개를 의미한다.
 <div class="wrapper-img">
-<img src="https://cloud.githubusercontent.com/assets/26436995/24606495/415e2762-18a8-11e7-9969-d5190a929c7b.png" width="500" />
+<img src="https://cloud.githubusercontent.com/assets/26436995/24606495/415e2762-18a8-11e7-9969-d5190a929c7b.png" width="600" />
 <p>그림 1. Classifier에 대한 예시</p>
 </div>
 우리의 목적은 어떠한 입력이 주어졌을 때, $$w$$의 값을 결정하는 것이다. 그러나 우리는 모든 것을 다 알고 있는 절대자가 아니기 때문에 $$w$$를 특정한 값으로 결정할 수 없다. 따라서, 주어진 입력과 다른 확률적 지식을 바탕으로 $$w$$를 확률적으로 정의한다.
