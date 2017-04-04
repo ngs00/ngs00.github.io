@@ -10,8 +10,16 @@ category: Pattern Classification
 <br />
 많은 경우에 MLE와 Bayesian estimation을 통해 얻어진 결과는 동일하다. 그러나 두 방법은 같은 estimation problem에 대해 다음과 같은 매우 다른 관점에서 문제를 해석한다.
 <ul>
-    <li>**Maximum Likelihood Estimation**: MLE는 알려지지 않은 parameter를 고정된 값으로 생각한다. 모델의 parameter를 고정된 값으로 생각하면서 주어진 sample이 실제로 관측될 확률을 최대화 하는 것이 MLE의 estimation 전략이다.</li>
-    <li>**Bayesian Estimation**: 반면에 Bayesian estimation은 parameter를 binomial distribution, normal distribution 등과 같이 알려진 확률 분포를 따르는 random variable로 생각한다.</li>
+    <li>
+    
+    **Maximum Likelihood Estimation**: MLE는 알려지지 않은 parameter를 고정된 값으로 생각한다. 모델의 parameter를 고정된 값으로 생각하면서 주어진 sample이 실제로 관측될 확률을 최대화 하는 것이 MLE의 estimation 전략이다.
+    
+    </li>
+    <li>
+    
+    **Bayesian Estimation**: 반면에 Bayesian estimation은 parameter를 binomial distribution, normal distribution 등과 같이 알려진 확률 분포를 따르는 random variable로 생각한다.
+    
+    </li>
 </ul>
 <br />
 ### Maximum Likelihood Estimation
