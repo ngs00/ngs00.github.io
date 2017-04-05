@@ -4,7 +4,8 @@ title: About
 permalink: /about/
 ---
 
-대학원생  
+대학원생
+<br class="br-tiny" />
 머신 러닝/데이터 마이닝/GPU 프로그래밍
 ### More Information
 
