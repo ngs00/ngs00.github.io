@@ -1,6 +1,6 @@
 ---
 type: post
-title: Maximum Likelihood Estimation
+title: Maximum Likelihood Estimation and Bayesian Estimation
 category: Pattern Classification
 ---
 
