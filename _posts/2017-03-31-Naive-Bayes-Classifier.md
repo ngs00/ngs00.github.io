@@ -49,7 +49,7 @@ $$
 \frac{P(e_1, e_2, ..., e_M|c_i)P(c_i)}{P(\mathcal{D})} \approx P(e_1|c_i)P(e_2|c_i) ... P(e_M|c_i)P(c_i)
 $$
 
-위의 식에서 $$P(e_m|c_i)$$는 class $$c_i$$일 때, 어떠한 요소 $$e_m$$가 나타날 확률이므로 사전에 학습 데이터가 주어진다면 비교적 쉽게 계산할 수 있다.
+위의 식에서 $$P(e_m|c_i)$$는 class $$c_i$$일 때, 어떠한 요소 $$e_m$$가 나타날 확률이므로, 주어진 training set을 이용하여 비교적 쉽게 계산할 수 있다.
 <br />
 ### Example
 이 항목에서는 간단한 형태의 NBC를 이용하여 주제별 문서 분류 classifier 설계 방법에 대해 서술한다. 먼저, classifier를 학습시키기 위한 training set이 다음과 같이 주어졌다고 가정한다.
