@@ -4,7 +4,7 @@ title: Naive Bayes Classifier
 category: Pattern Classification
 ---
 
-이 글에서는 가장 단순한 형태의 Naive Bayes Classifier (NBC)에 대해 설명한다. NBC는 <a href="https://ngs00.github.io/Bayesian-Decision-Theory/">앞의 글</a>에서 설명한 Bayes decision theory에 어떠한 가정을 추가하여 만들어진 모델이다. NBC는 확률 기반 모델의 classifier를 만들 수 있는 간단하면서도 대중적인 방법이다. 그러나 간단한 원리와 구조로 설계되었음에도 NBC는 여러 복잡한 문제에서도 잘 작동한다.
+이 글에서는 가장 단순한 형태의 Naive Bayes Classifier (NBC)에 대해 설명한다. NBC는 <a href="https://ngs00.github.io/Bayesian-Decision-Theory/">앞의 글</a>에서 설명한 Bayes decision theory에 어떠한 가정을 추가하여 만들어진 모델이다. NBC는 확률 기반 모델의 classifier를 만들 수 있는 간단한 방법중 이다. 그러나 간단한 원리와 구조로 설계되었음에도 NBC는 여러 복잡한 문제에서도 잘 작동한다.
 <br />
 NBC는 1960 년대 초에 text mining 분야에 소개된 이후로 스팸 분류, 주제별 문서 분류 등에 광범위하게 이용되고 있다. 이 글에서는 NBC에 적용된 Bayes decision theory와 NBC의 설계 원리에 대해 소개하고, 간단한 주제별 문서 분류 예제를 통해 NBC의 학습 및 동작 원리를 설명할 것이다.
 <br />
