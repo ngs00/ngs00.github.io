@@ -18,7 +18,7 @@ MLE는 sample의 수가 증가하여도 비교적 잘 수렴하는 특징과 다
 <br />
 그러나 MLE 또한 완벽한 것은 아니다. *likelihood*에 해당하는 $$p(\boldsymbol{x}|\omega_j)$$를 풀어서 쓰면, $$p(x_1, x_2, ..., x_M|\omega_j)$$가 되기 때문에 입력에 존재하는 요소들의 dependency를 모두 고려하여 추정을 해야 한다. 이러한 문제는 대부분 해결하기가 매우 어렵거나, 불가능한 경우도 있다. MLE에서는 아래와 같은 몇 가지 가정을 추가함으로써 likelihood를 계산 가능한 형태로 변형한다.
 <ul>
-    <li>우리는 $p(\boldsymbol{x}|\omega_j)$를 잘 알려진 형태의 probability distribution이라고 가정한다. 따라서, model parameter $$\omega_j$$를 구하면 likelihood를 정확하게 계산할 수 있다.</li>
+    <li>우리는 $$p(\boldsymbol{x}|\omega_j)$$를 잘 알려진 형태의 probability distribution이라고 가정한다. 따라서, model parameter $$\omega_j$$를 구하면 likelihood를 정확하게 계산할 수 있다.</li>
     <li>Sample에 존재하는 각 instance들은 독립적으로 생성된다.</li>
     <li>하나의 instance의 각 element들은 독립적으로 생성된다.</li>
     <li>각 class의 model parameter $$\omega_j$$는 다른 model parameter들과 독립적이다.</li>
