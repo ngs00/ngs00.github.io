@@ -15,13 +15,13 @@ $$
 P(B|A) = \frac{P(A,B)}{P(A)}
 $$
 
-이러한 conditional probability는 Bayes's theorem이라는 것에 의해 아래의 식 (2)와 같이 계산될 수 있다.
+이러한 conditional probability는 Bayes's theorem에 의해 아래의 식 (2)와 같이 계산될 수 있다.
 
 $$
 P(B|A) = \frac{P(A|B)P(B)}{P(A)}
 $$
 
-NBC는 입력 데이터에 포함된 어떤 요소가 나타날 때, 주어진 입력이 어떠한 class에 속할 확률을 비교하여 가장 높은 확률을 갖는 class로 데이터를 할당하도록 동작한다 [그림 1].
+NBC는 입력 데이터가 주어졌을 때 주어진 입력이 어떠한 class에 속할 확률들을 비교하여 가장 높은 확률을 갖는 class로 입력 데이터를 하도록 동작한다 [그림 1].
 <div class="wrapper-img">
 <img src="https://cloud.githubusercontent.com/assets/26436995/24494478/5d391d68-156d-11e7-8416-cd5d9f2f7238.png" width="500" />
 <p>그림 1. The model structure of Naive Bayes Classifier</p>
