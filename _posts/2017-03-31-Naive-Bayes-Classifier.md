@@ -116,10 +116,10 @@ $$
 Training set에 제시되어 있지 않은 요소에 대한 확률이 항상 0으로 계산되어 다른 정보들이 모두 무시되는 문제를 해결하기 위해 NBC에서는 Laplace smoothing을 이용한다. Laplace smoothing을 적용한 $$P(e_m|c_i)$$는 아래의 식 (8)과 같이 정의된다 [3].
 
 $$
-P(e_m|c_i) = \frac{count(e_m, c_i) + 1}{|c_i| + |u_i|}
+P(e_m|c_i) = \frac{count(e_m, c_i) + 1}{|c_i| + |u|}
 $$
 
-위의 식에서 $$count(e_m, c_i)$$는 training set에서 $$e_m$$이 $$c_i$$일 때 나타나는 횟수이고, &#124;$$c_i$$&#124;와 &#124;$$u_i$$&#124;는 각각 class $$c_i$$에 있는 모든 element의 수와 모든 클래스에서 유일한 element의 수이다. 예를 들어, Laplace smoothing을 적용한 $$P(int$$&#124;$$Java)$$는 다음과 같이 계산된다.
+위의 식에서 $$count(e_m, c_i)$$는 training set에서 $$e_m$$이 $$c_i$$일 때 나타나는 횟수이고, &#124;$$c_i$$&#124;와 &#124;$$u$$&#124;는 각각 class $$c_i$$에 있는 모든 element의 수와 모든 클래스에서 유일한 element의 수이다. 예를 들어, Laplace smoothing을 적용한 $$P(int$$&#124;$$Java)$$는 다음과 같이 계산된다.
 
 $$
 P(int|Java) = \frac{2 + 1}{9 + 11} = \frac{3}{20}
